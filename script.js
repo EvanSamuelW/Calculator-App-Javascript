@@ -9,12 +9,7 @@ const updateScreen = (number) => {
 
 
 const inputNumber = (number) => {
-    if (currentNumber === '0') {
-        currentNumber = number
-    } else {
-        currentNumber += number
-    }
-
+    currentNumber === '0' ? currentNumber = number : currentNumber += number;
 }
 const numbers = document.querySelectorAll(".number")
 

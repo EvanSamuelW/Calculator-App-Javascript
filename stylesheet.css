@@ -1,3 +1,8 @@
+body {
+    background: linear-gradient(45deg, black, white);
+    height: 100vh;
+}
+
 .calculator {
     text-align: center;
     margin: 0 auto;
@@ -15,6 +20,8 @@
     border: none;
     padding: 0 20px;
     box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .calculator-keys {
@@ -40,9 +47,17 @@ button {
     width: 50%;
 }
 
+.zero-btn {
+    border-bottom-left-radius: 10px;
+}
+
 .operator,
 .equal-sign {
     background-color: orange;
+}
+
+.equal-sign {
+    border-bottom-right-radius: 10px;
 }
 
 button:hover {
